@@ -1,0 +1,421 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: montserrat;
+}
+/* подключение шрифта */
+@font-face {
+    font-family: 'montserrat';
+    src: url(../font/Montserrat-Medium.ttf);
+}
+
+/* шапка */
+header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #ff8624;
+    color: white;
+}
+.head{
+    width: 1000px;
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    justify-content: center;   
+}
+/* верхняя часть шапки */
+.headLogoContact{
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    column-gap: 670px;
+    align-items: center;
+    height: 70px;
+}
+/* логотип */
+.logo{
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+}
+.bankName{
+    display: grid;
+    grid-template-rows: repeat(2,max-content);
+}
+#bankName{
+    font-size: 22px;
+    font-weight: bolder;
+}
+/* контактная информация */
+.contact{
+    display: grid;
+    grid-template-rows: repeat(2,max-content);
+    justify-items: right;
+}
+#nomerTel{
+    font-size: 20px;
+}
+#nomerTel img{
+    opacity: 0.7;
+}
+/* нижняя часть шапки */
+.headLinks{
+    display: grid;
+    grid-template-columns: repeat(4,max-content);
+    justify-content: right;
+    align-content: center;
+    column-gap: 30px;
+    height: 40px;
+}
+.headLinks a{
+    color: white;
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.headLinks a:hover{
+    background-color: #ff9666;
+}
+/* ссылки */
+a{
+    text-decoration: none;
+    color: #fa6400;
+}
+
+/* основная секция */
+section{
+    display: flex;
+    justify-content: center;
+}
+.osnova{
+    width: 1000px;
+    display: grid;
+    grid-template-rows: repeat();
+    justify-content: center;
+    row-gap: 60px;
+    margin-top: 60px;
+}
+/* главная */
+.main{
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    background-color: #ffc7a8;
+    border-radius: 100px 20px;
+    width: 1000px;
+    justify-content: center;
+}
+.main img{
+    height: 400px;
+}
+.nameSlogan{
+    display: grid;
+    grid-template-rows: repeat(3,max-content);
+    row-gap: 20px;
+    align-content: center;
+    width: 470px;
+}
+.headSp{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.textP{
+    font-size: 20px;
+}
+.nameSlogan button{
+    margin-top: 40px;
+}
+
+/* кнопки */
+button{
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+}
+button:hover{
+    color: #fa6400;
+    cursor: pointer;
+}
+
+/* акции */
+.stocks{
+    display: grid;
+    grid-template-rows: repeat(2,max-content);
+    row-gap: 40px;
+    width: 1000px;
+}
+h1{
+    font-size: 40px;
+}
+.stocksCard{
+    display: grid;
+    grid-template-columns: repeat(3,max-content);
+    justify-content: center;
+    column-gap: 20px;
+}
+.card{
+    width: 280px;
+    border: 2px solid #ffc7a8;
+    padding: 18px;
+    display: grid;
+    grid-template-rows: repeat(4,max-content);
+    row-gap: 20px;
+    border-radius: 20px 60px;
+}
+.card img{
+    width: 280px;
+    height: 150px;
+    border-radius: 10px;
+}
+.card a{
+    margin-left: 168px;
+}
+
+/* безопасность */
+hr{
+    height: 3px;
+    border: none;
+    background-color: #ffc7a8;
+}
+.security{
+    display: grid;
+    grid-template-rows: repeat();
+    row-gap: 30px;
+}
+.securityTextImg{
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    align-items: center;
+}
+.securityTextImg img{
+    width: 400px;
+}
+.securityText{
+    width: 600px;
+    display: grid;
+    grid-template-rows: repeat();
+    row-gap: 10px;
+}
+/* безопасность часть два */
+.samoSecurity{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 40px;
+    align-items: center;
+    width: 1000px;
+}
+.samoSecurity img{
+    width: 360px;
+}
+.samoSecurityText{
+    width: 600px;
+    display: grid;
+    grid-template-rows: repeat();
+    row-gap: 10px;
+}
+li{
+    list-style: decimal;
+}
+li::marker{
+    color: #ffc7a8;
+}
+
+/* курсы валют */
+.curs{
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    column-gap: 140px;
+    width: 1000px;
+    justify-content: center;
+}
+.cursInfo{
+    display: grid;
+    grid-template-rows: repeat();
+    row-gap: 30px;
+    height: fit-content;
+}
+.cursInfoCards{
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    column-gap: 20px;
+}
+.cursInfoCard{
+    display: grid;
+    grid-template-rows: repeat();
+    row-gap: 10px;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #ffc7a8;
+    border-radius: 40px 10px
+}
+h4 img{
+    height: 20px;
+}
+
+/* калукулятор */
+.calc{
+    display: grid;
+    grid-template-rows: repeat();
+    row-gap: 20px;
+    background-color: #ffc7a8;
+    padding: 20px;
+    border-radius: 20px 50px;
+}
+.calc input{
+    text-align: center;
+    font-size: 18px;
+    height: 22px;
+}
+.countVal{
+    width: 100px;
+}
+.calc select{
+    height: 22px;
+}
+
+/* подвал */
+footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #ff8624;
+    color: white;
+    margin-top: 60px;
+}
+.foot{
+    width: 1000px;
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    justify-content: center;
+}
+.footInfoContact{
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    column-gap: 380px;
+    align-items: center;
+    height: 70px;
+}
+.pravaCreator{
+    display: grid;
+    grid-template-rows: repeat();
+}
+
+/* окно регистрации */
+.popupFade{
+    display: none;
+}
+.popupFade:before{
+    content: '';
+    background: #000;
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    opacity: 0.7;
+    z-index: 9999;
+}
+.popup{
+    position: fixed;
+    top: 10%;
+    left: 45%;
+    padding: 50px;
+    padding-bottom: 10px;
+    width: 500px;
+    margin-left: -200px;	
+    background: #fff;
+    border: 2px solid #ffc7a8;
+    border-radius: 20px; 
+    z-index: 99999;
+    opacity: 1;
+    display: grid;
+    grid-template-rows: repeat(4, max-content);
+    row-gap: 30px;
+}
+.headPopup{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    column-gap: 130px;
+}
+.regForm{
+    display: grid;
+    grid-template-rows: repeat();
+    row-gap: 30px;
+}
+.inpPopup{
+    display: grid;
+    grid-template-rows: repeat();
+    row-gap: 5px;
+}
+.inpPopup input{
+    height: 30px;
+    border-radius: 4px;
+    font-size: 22px;
+    padding-left: 20px;
+}
+.inpPopup a{
+    margin-left: 390px;
+    font-size: 14px;
+}
+.registerBtn{
+    margin-left: 300px;
+}
+
+/* адаптив */
+@media screen and (max-width: 999px){
+    .head, .osnova, .main, .stocks , .samoSecurity, .curs{
+        width: 700px;
+    }
+    .headLogoContact{
+        column-gap: 300px;
+    }
+    .headSp{
+        font-size: 30px;
+    }
+    .nameSlogan{
+        width: 300px;
+    }
+    .main img{
+        width: 300px;
+        height: 300px;
+    }
+    .regBtn{
+        margin-top: 10px;
+    }
+    .stocks{
+        justify-content: center;
+    }
+    .stocksCard{
+        grid-template-columns: repeat(1, max-content);
+        row-gap: 30px;
+
+    }
+    .security{
+        justify-items: center;
+    }
+    .security img{
+        display: none;
+    }
+    .samoSecurity{
+        justify-content: center;
+    }
+    .securityTextImg, .samoSecurity, .curs{
+        grid-template-columns: repeat(1,max-content);
+    }
+    .footInfoContact{
+        column-gap: 50px;
+    }
+    .curs{
+        row-gap: 
+        20px;
+    }
+    .map{
+        display: none;
+    }
+}
